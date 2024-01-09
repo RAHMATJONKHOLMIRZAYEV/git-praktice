@@ -3,17 +3,18 @@
 const numberOfseries = +prompt("Nechta Serial kurdingiz", "");
 
 const seriesDB = {
-    count: numberOfseries,
-    series: {},
-    actors: {},
-    genres: [],
-    privat: false,
+  count: numberOfseries,
+  series: {},
+  actors: {},
+  genres: [],
+  privat: false,
 };
-
-// const a = prompt("yaqin 5 kun ichida qaysi serialni kurdingiz?"),
+// Buyerda Savol berilgan yani ushbu 2-dona savol 2-marta berilishi kerak bulgan va shu kurinishda berilgan va keyinchalik pastroqda optimalashtirilgan
+//   const a = prompt("yaqin 5 kun ichida qaysi serialni kurdingiz?"),
 //   b = prompt("Nechi baho berasiz?"),
 //   c = prompt("Oxirgi ko'rgan serialingiz?"),
 //   d = prompt("Nechi baho berasiz?");
+
 for(let i = 0; i < 2; i++){
   const a = prompt("Oxirgi ko'rgan serialingiz?"),
   b = prompt("Nechi baho berasiz?");

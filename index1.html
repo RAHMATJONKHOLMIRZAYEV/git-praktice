@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width= , initial-scale=1.0">
-    <title>Tsiikl</title>
+    <title>Tsikl</title>
 </head>
 <body>
     <h1>hello World</h1>
@@ -18,12 +18,55 @@
 //      console.log(startNum);
 //      startNum++;
 //  } while (startNum <= 10);
-for(let i = 1; i <= 20; i++){
- if (i === 10){
-    break;
- }    
- console.log(i)
+// for(let i = 1; i <= 20; i++){
+//  if (i === 10){
+//     break;
+//  }    
+//  console.log(i)
+// }
+
+const numberOfSeries = +prompt("Nechta Serial kurdingiz", "");
+
+const seriesDB = {
+    count: numberOfSeries,
+    series: {},
+    actors: {},
+    genres: [],
+    privat: false,
+};
+
+let first = 0;
+while (first < 2) {
+    const a = prompt("Oxirgi ko'rgan serialingiz?"),
+          b = prompt("Nechi baho berasiz?");
+    
+    if (a != null && b != null && a !== "" && b !== "") {
+        seriesDB.series[a] = b;
+        console.log("done");
+        first++;
+    } else {
+        console.log("error");
+    }
 }
+
+if (seriesDB.count < 5) {
+    console.log("Kam serial ko'ripsiz");
+} else if (seriesDB.count >= 5 && seriesDB.count < 10) {
+    console.log("Siz Klassik tomoshabin ekansiz");
+} else if (seriesDB.count >= 10) {
+    console.log("Siz serialchi zvezda ekansiz");
+} else {
+    console.log("Error");
+}
+
+const Answer = prompt("Javobingiz uchun rahmat😊");  
+const ok = alert("Tashakur😍");
+const comment = {
+    comment: Answer,
+};
+  
+  console.log(seriesDB);
+  console.log(comment);
 
 </script>
 </body>
